@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muzimóveis | Seu Lar Ideal, Nossa Missão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <a href="#">
+        <!--
+          nav__logo-white  → visível quando nav é transparente (sobre hero escuro)
+          nav__logo-dark   → visível depois do scroll (nav com fundo escuro)
+          Ajuste os src conforme os seus ficheiros de logo.
+          Recomendação: versão PNG transparente branca para nav__logo-white.
+        -->
+        <img src="logo/Muzimoveis.jpeg" alt="Muzimóveis" class="nav__logo-img nav__logo-dark"  />
+        <img src="logo/FAV-ICOM.jpeg"   alt="Muzimóveis" class="nav__logo-img nav__logo-white" />
+      </a>
+    </div>
+
+    <div class="nav__menu-btn" id="menu-btn">
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <a href="#contacto" class="nav__cta">Pedir Informação</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__bg">
+      <!--
+        Coloque aqui a sua melhor foto de imóvel.
+        O ficheiro que enviou está na raiz do projecto — mova-o para assets/ se preferir.
+        src="assets/header.jpg"
+      -->
+      <img
+        src="imageye___-_imgi_3_619792737_17849792637664103_677203579817290766_n.jpg"
+        alt="Vivenda Kilamba Dream"
+        class="hero__img"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <span class="hero__eyebrow">Descubra Mais</span>
+      <h1 class="hero__title">O Seu<br /><em>Lar Ideal</em></h1>
+      <p class="hero__desc">
+        Na Muzimóveis transformamos imóveis em experiências únicas.
+        Espaços modernos, elegantes e preparados para oferecer conforto,
+        segurança e qualidade de vida para si e para a sua família.
+      </p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--primary">Explorar Imóveis</a>
+        <a href="#contacto" class="btn btn--ghost">Falar Connosco</a>
+      </div>
+    </div>
+
+    <div class="hero__socials">
+      <a href="https://www.facebook.com/profile.php?id=61585811738321" target="_blank" aria-label="Facebook">
+        <i class="ri-facebook-fill"></i>
+      </a>
+      <a href="https://www.instagram.com/muzimoveis" target="_blank" aria-label="Instagram">
+        <i class="ri-instagram-line"></i>
+      </a>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats__item">
+      <strong>+120</strong>
+      <span>Imóveis Vendidos</span>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__item">
+      <strong>+8</strong>
+      <span>Anos de Experiência</span>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__item">
+      <strong>+300</strong>
+      <span>Clientes Satisfeitos</span>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__item">
+      <strong>100%</strong>
+      <span>Negócios Seguros</span>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="section__header">
+      <span class="section__label">O que fazemos</span>
+      <h2 class="section__title">Os Nossos Serviços</h2>
+    </div>
+    <div class="services__grid">
+      <div class="service__card">
+        <div class="service__icon"><i class="ri-building-2-line"></i></div>
+        <h3>Compra &amp; Venda</h3>
+        <p>Acompanhamento completo na aquisição ou alienação do seu imóvel, com transparência e segurança jurídica.</p>
+      </div>
+      <div class="service__card">
+        <div class="service__icon"><i class="ri-key-2-line"></i></div>
+        <h3>Arrendamento</h3>
+        <p>Gestão de arrendamentos residenciais e comerciais, de curto e longo prazo, para particulares e empresas.</p>
+      </div>
+      <div class="service__card">
+        <div class="service__icon"><i class="ri-home-heart-line"></i></div>
+        <h3>Avaliação Imobiliária</h3>
+        <p>Análise rigorosa do valor real do seu imóvel, suportada por dados de mercado actualizados.</p>
+      </div>
+      <div class="service__card">
+        <div class="service__icon"><i class="ri-shield-check-line"></i></div>
+        <h3>Consultoria Jurídica</h3>
+        <p>Apoio especializado em processos legais, contratos e documentação necessária à transacção imobiliária.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how">
+    <div class="how__left">
+      <span class="section__label">Processo</span>
+      <h2 class="section__title">Como Funciona</h2>
+      <p class="how__desc">Um caminho simples e transparente, do primeiro contacto à entrega das chaves.</p>
+    </div>
+    <div class="how__steps">
+      <div class="how__step">
+        <span class="how__num">01</span>
+        <div>
+          <h4>Briefing</h4>
+          <p>Percebemos as suas necessidades e preferências.</p>
+        </div>
+      </div>
+      <div class="how__step">
+        <span class="how__num">02</span>
+        <div>
+          <h4>Selecção</h4>
+          <p>Apresentamos as melhores opções do mercado. Você decide.</p>
+        </div>
+      </div>
+      <div class="how__step">
+        <span class="how__num">03</span>
+        <div>
+          <h4>Execução</h4>
+          <p>Tratamos de todo o processo. Simples. Seguro. Concluído.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="section__header">
+      <span class="section__label">Imóveis em Destaque</span>
+      <h2 class="section__title">Portfólio</h2>
+    </div>
+
+    <div class="portfolio__grid">
+      <div class="property__card property__card--large">
+        <img
+          src="logo/casas/11.jpg"
+          alt="Vivenda Kilamba Dream"
+        />
+        <div class="property__info">
+          <span class="property__tag property__tag--sale">Venda</span>
+          <h3>Kilamba Dream — T3/T4</h3>
+          <p>Centralidade do Kilamba, Luanda</p>
+          <span class="property__price">A partir de 85.000.000 Kz</span>
+        </div>
+      </div>
+
+      <div class="property__card">
+        <img
+          src="imageye___-_imgi_2_591164072_17842124355664103_7326059851184029769_n.jpg"
+          alt="Imóvel Muzimóveis"
+        />
+        <div class="property__info">
+          <span class="property__tag">Arrendamento</span>
+          <h3>Apartamento T3</h3>
+          <p>Luanda, Angola</p>
+        </div>
+      </div>
+
+      <div class="property__card property__card--placeholder">
+        <div class="property__placeholder-inner">
+          <i class="ri-home-2-line"></i>
+          <p>Mais imóveis em breve</p>
+        </div>
+        <div class="property__info">
+          <span class="property__tag">Em Carteira</span>
+          <h3>Novos Imóveis</h3>
+          <p>Várias zonas de Luanda</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio__cta">
+      <a href="#contacto" class="btn btn--outline">Consultar Disponibilidade</a>
+    </div>
+  </section>
+
+  <!-- DESTAQUE — KILAMBA DREAM -->
+  <section class="highlight">
+    <div class="highlight__left">
+      <span class="section__label">Projecto em Destaque</span>
+      <h2 class="section__title">Kilamba Dream</h2>
+      <p class="highlight__desc">
+        Um condomínio residencial de sonho no coração da Centralidade do Kilamba,
+        adjacente ao quarteirão W. O espaço perfeito para quem busca conforto,
+        praticidade e um excelente investimento.
+      </p>
+
+      <div class="highlight__tags">
+        <span>T3 Acabada</span>
+        <span>T3 Inacabada</span>
+        <span>T4 Disponível</span>
+      </div>
+
+      <div class="highlight__prices">
+        <div class="highlight__price-item">
+          <strong>T3 Acabada</strong>
+          <p class="old-price">De: 105.000.000 Kz</p>
+          <p class="new-price">85.000.000 Kz</p>
+          <small>Entrada 50% · Remanescente em 2 anos · 1.770.840 Kz/mês</small>
+        </div>
+        <div class="highlight__price-item">
+          <strong>T3 Inacabada</strong>
+          <p class="old-price">De: 70.000.000 Kz</p>
+          <p class="new-price">50.000.000 Kz</p>
+          <small>Entrada 50% · Remanescente em 2 anos · 1.041.700 Kz/mês</small>
+        </div>
+      </div>
+
+      <a href="#contacto" class="btn btn--primary">Saber Mais</a>
+    </div>
+
+    <div class="highlight__right">
+      <img
+        src="logo/casas/imageye___-_imgi_2_591164072_17842124355664103_7326059851184029769_n (1).jpg"
+        alt="Kilamba Dream"
+        class="highlight__img"
+      />
+      <div class="highlight__badge">
+        <i class="ri-fire-line"></i>
+        <span>Super<br />Promoção</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <h2>Consultas são bem-vindas.</h2>
+    <p>Compras · Vendas · Arrendamentos · Contas Empresariais</p>
+    <a href="#contacto" class="btn btn--white">Contactar Agora</a>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="section__header">
+      <span class="section__label">Fale Connosco</span>
+      <h2 class="section__title">Contacto</h2>
+      <p class="contact__sub">Cada pedido recebe atenção individual. Resposta em 24 horas.</p>
+    </div>
+
+    <div class="contact__wrapper">
+      <div class="contact__info">
+        <div class="contact__info-item">
+          <i class="ri-map-pin-line"></i>
+          <div>
+            <strong>Localização</strong>
+            <span>Centralidade do Kilamba, Bloco C,<br />Edifício 23, 2.º Andar, Apto 22</span>
+          </div>
+        </div>
+        <div class="contact__info-item">
+          <i class="ri-mail-line"></i>
+          <div>
+            <strong>Email</strong>
+            <span>muzimoveis@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact__info-item">
+          <i class="ri-whatsapp-line"></i>
+          <div>
+            <strong>WhatsApp / Telefone</strong>
+            <span>(+244) 928 020 262</span>
+            <span style="display:block">(+351) 912 636 834</span>
+          </div>
+        </div>
+        <div class="contact__socials">
+          <a href="https://www.facebook.com/profile.php?id=61585811738321" target="_blank" aria-label="Facebook">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/muzimoveis" target="_blank" aria-label="Instagram">
+            <i class="ri-instagram-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form">
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="O seu nome" />
+          </div>
+          <div class="form__group">
+            <label for="contact">Email / Telefone</label>
+            <input type="text" id="contact" placeholder="Email ou número" />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="subject">Assunto</label>
+          <select id="subject">
+            <option value="">Seleccione uma opção</option>
+            <option>Compra de Imóvel</option>
+            <option>Venda de Imóvel</option>
+            <option>Arrendamento — Curto Prazo</option>
+            <option>Arrendamento — Longo Prazo</option>
+            <option>Kilamba Dream — T3/T4</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" rows="5" placeholder="Descreva a sua necessidade…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar Pedido</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="logo/FAV-ICOM.jpeg" alt="Muzimóveis" class="footer__logo" />
+        <p>Seu lar ideal, nossa missão.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/profile.php?id=61585811738321" target="_blank"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.instagram.com/muzimoveis" target="_blank"><i class="ri-instagram-line"></i></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Muzimóveis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
