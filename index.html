@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="index.css" />
+  
 </head>
 <body>
 
@@ -229,11 +230,33 @@
       </div>
     </div>
   </div>
+  <section class="location">
+  <div class="location-text">
+    <span>Localização</span>
+    <h2>Visite-nos no Kilamba</h2>
+    <p>
+      Estamos localizados no edifício C23 em Kilamba,
+      oferecendo atendimento personalizado e soluções modernas.
+    </p>
+  </div>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7881.575666446313!2d13.251420177709962!3d-8.991661100000002!2m3!1f0!2f0!3f0!1m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f00428694c5%3A0xdfc93aa00f4bc083!2sKilamba%20Edif%C3%ADcio%20C23!5e0!3m2!1spt-PT!2sin!4v1780066505450!5m2!1spt-PT!2sin"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
 
   <div class="portfolio__cta">
     <a href="#contacto" class="btn btn--outline">Consultar Disponibilidade</a>
+    
   </div>
 </section>
+
+
   <!-- DESTAQUE — KILAMBA DREAM -->
   <section class="highlight">
     <div class="highlight__left">
@@ -362,6 +385,50 @@
       </form>
     </div>
   </section>
+  <script>
+
+const cards = document.querySelectorAll('.property__card');
+
+cards.forEach(card => {
+
+  card.addEventListener('mousemove', (e) => {
+
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = (y - centerY) / 18;
+    const rotateY = (centerX - x) / 18;
+
+    const img = card.querySelector('img');
+
+    img.style.transform = `
+      scale(1.22)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+    `;
+
+  });
+
+  card.addEventListener('mouseleave', () => {
+
+    const img = card.querySelector('img');
+
+    img.style.transform = `
+      scale(1)
+      rotateX(0)
+      rotateY(0)
+    `;
+
+  });
+
+});
+
+</script>
 
   <!-- FOOTER -->
   <footer class="footer">

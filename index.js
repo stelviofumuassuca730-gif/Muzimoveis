@@ -41,3 +41,16 @@ if (form) {
     }, 3500);
   });
 }
+<script>
+const hero = document.querySelector('.hero__img');
+
+window.addEventListener('mousemove', (e)=>{
+
+  const x = (window.innerWidth / 2 - e.clientX) / 40;
+  const y = (window.innerHeight / 2 - e.clientY) / 40;
+
+  hero.style.transform =
+    `scale(1.1) translate(${x}px, ${y}px)`;
+
+});
+</script>
