@@ -1,512 +1,632 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-PT">
-
-<!-- ============================================================
+  <!-- ============================================================
      HEAD
 ============================================================ -->
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muzimóveis | Seu Lar Ideal, Nossa Missão</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzimóveis | Seu Lar Ideal, Nossa Missão</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
-    rel="stylesheet"
-  />
+    <!-- TODO: refatorar para .ico / .png -->
+    <link rel="shortcut icon" href="logo/favicon.png" type="image/png" />
 
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="index.css" />
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <style>
-    /* Vídeo ocupa o mesmo espaço que a imagem anterior */
-    .highlight__video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  </style>
-</head>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
 
+    <meta name="description" content="Muzimóveis — Transformamos imóveis em experiências únicas. Espaços modernos, elegantes e preparados para oferecer conforto, segurança e qualidade de vida para si e para a sua família." />
+    <meta name="author" content="Stélvio Fumuassuca <changeme@gmail.com>" />
+  </head>
 
-<body>
-
-  <!-- ============================================================
+  <body>
+    <!-- ============================================================
        NAV
   ============================================================ -->
-  <nav class="nav" id="navbar">
+    <nav class="nav" id="navbar">
+      <div class="nav__logo">
+        <a href="#">
+          <img
+            src="logo/Muzimoveis.jpeg"
+            alt="Muzimóveis"
+            class="nav__logo-img nav__logo-dark"
+          />
+          <img
+            src="logo/FAV-ICOM.jpeg"
+            alt="Muzimóveis"
+            class="nav__logo-img nav__logo-white"
+          />
+        </a>
+      </div>
 
-    <div class="nav__logo">
-      <a href="#">
-        <img src="logo/Muzimoveis.jpeg"  alt="Muzimóveis" class="nav__logo-img nav__logo-dark"  />
-        <img src="logo/FAV-ICOM.jpeg"    alt="Muzimóveis" class="nav__logo-img nav__logo-white" />
-      </a>
-    </div>
+      <button
+        class="nav__menu-btn"
+        id="menu-btn"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
 
-    <button class="nav__menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
 
-    <ul class="nav__links" id="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#portfolio">Portfólio</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
+      <a href="#contacto" class="nav__cta">Pedir Informação</a>
+    </nav>
 
-    <a href="#contacto" class="nav__cta">Pedir Informação</a>
-
-  </nav>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        HERO
   ============================================================ -->
-  <header class="hero">
-
-    <div class="hero__bg">
-      <img
-        src="imageye___-_imgi_3_619792737_17849792637664103_677203579817290766_n.jpg"
-        alt="Vivenda Kilamba Dream"
-        class="hero__img"
-      />
-      <div class="hero__overlay" aria-hidden="true"></div>
-    </div>
-
-    <div class="hero__content">
-      <span class="hero__eyebrow">Descubra Mais</span>
-      <h1 class="hero__title">
-        O Seu<br />
-        <em>Lar Ideal</em>
-      </h1>
-      <p class="hero__desc">
-        Na Muzimóveis transformamos imóveis em experiências únicas.
-        Espaços modernos, elegantes e preparados para oferecer conforto,
-        segurança e qualidade de vida para si e para a sua família.
-      </p>
-      <div class="hero__actions">
-        <a href="#portfolio" class="btn btn--primary">Explorar Imóveis</a>
-        <a href="#contacto"  class="btn btn--ghost">Falar Connosco</a>
-      </div>
-    </div>
-
-    <div class="hero__socials" aria-label="Redes sociais">
-      <a href="https://www.facebook.com/profile.php?id=61585811738321" target="_blank" rel="noopener" aria-label="Facebook">
-        <i class="ri-facebook-fill" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.instagram.com/muzimoveis" target="_blank" rel="noopener" aria-label="Instagram">
-        <i class="ri-instagram-line" aria-hidden="true"></i>
-      </a>
-    </div>
-
-    <div class="hero__scroll" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-
-  </header>
-
-
-  <!-- ============================================================
-       ESTATÍSTICAS
-  ============================================================ -->
-  <section class="stats" aria-label="Estatísticas">
-
-    <div class="stats__item">
-      <strong>+120</strong>
-      <span>Imóveis Vendidos</span>
-    </div>
-
-    <div class="stats__divider" aria-hidden="true"></div>
-
-    <div class="stats__item">
-      <strong>+8</strong>
-      <span>Anos de Experiência</span>
-    </div>
-
-    <div class="stats__divider" aria-hidden="true"></div>
-
-    <div class="stats__item">
-      <strong>+300</strong>
-      <span>Clientes Satisfeitos</span>
-    </div>
-
-    <div class="stats__divider" aria-hidden="true"></div>
-
-    <div class="stats__item">
-      <strong>100%</strong>
-      <span>Negócios Seguros</span>
-    </div>
-
-  </section>
-
-
-  <!-- ============================================================
-       SERVIÇOS
-  ============================================================ -->
-  <section class="services" id="servicos">
-
-    <div class="section__header">
-      <span class="section__label">O que fazemos</span>
-      <h2 class="section__title">Os Nossos Serviços</h2>
-    </div>
-
-    <div class="services__grid">
-
-      <div class="service__card">
-        <div class="service__icon"><i class="ri-building-2-line" aria-hidden="true"></i></div>
-        <h3>Compra &amp; Venda</h3>
-        <p>Acompanhamento completo na aquisição ou alienação do seu imóvel, com transparência e segurança jurídica.</p>
+    <header class="hero">
+      <div class="hero__bg">
+        <video
+          src="logo/casas/hero.mp4"
+          alt="Imagem de um tecnico de interior a trabalha"
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="logo/casas/PHOTO-2026-06-07-02-15-22.jpg"
+        ></video>
+        <div class="hero__overlay" aria-hidden="true"></div>
       </div>
 
-      <div class="service__card">
-        <div class="service__icon"><i class="ri-key-2-line" aria-hidden="true"></i></div>
-        <h3>Arrendamento</h3>
-        <p>Gestão de arrendamentos residenciais e comerciais, de curto e longo prazo, para particulares e empresas.</p>
-      </div>
-
-      <div class="service__card">
-        <div class="service__icon"><i class="ri-home-heart-line" aria-hidden="true"></i></div>
-        <h3>Avaliação Imobiliária</h3>
-        <p>Análise rigorosa do valor real do seu imóvel, suportada por dados de mercado actualizados.</p>
-      </div>
-
-      <div class="service__card">
-        <div class="service__icon"><i class="ri-shield-check-line" aria-hidden="true"></i></div>
-        <h3>Consultoria Jurídica</h3>
-        <p>Apoio especializado em processos legais, contratos e documentação necessária à transacção imobiliária.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ============================================================
-       COMO FUNCIONA
-  ============================================================ -->
-  <section class="how">
-
-    <div class="how__left">
-      <span class="section__label">Processo</span>
-      <h2 class="section__title">Como Funciona</h2>
-      <p class="how__desc">Um caminho simples e transparente, do primeiro contacto à entrega das chaves.</p>
-    </div>
-
-    <div class="how__steps">
-
-      <div class="how__step">
-        <span class="how__num" aria-hidden="true">01</span>
-        <div>
-          <h4>Briefing</h4>
-          <p>Percebemos as suas necessidades e preferências.</p>
-        </div>
-      </div>
-
-      <div class="how__step">
-        <span class="how__num" aria-hidden="true">02</span>
-        <div>
-          <h4>Selecção</h4>
-          <p>Apresentamos as melhores opções do mercado. Você decide.</p>
-        </div>
-      </div>
-
-      <div class="how__step">
-        <span class="how__num" aria-hidden="true">03</span>
-        <div>
-          <h4>Execução</h4>
-          <p>Tratamos de todo o processo. Simples. Seguro. Concluído.</p>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ============================================================
-       PORTFÓLIO
-  ============================================================ -->
-  <section class="portfolio" id="portfolio">
-
-    <div class="section__header">
-      <span class="section__label">Imóveis em Destaque</span>
-      <h2 class="section__title">Portfólio</h2>
-    </div>
-
-    <div class="portfolio__grid">
-
-      <article class="property__card property__card--large">
-        <img src="logo/casas/11.jpg" alt="Vivenda Kilamba Dream" />
-        <div class="property__info">
-          <span class="property__tag property__tag--sale">Venda</span>
-          <h3>Kilamba Dream — V4</h3>
-          <p>Centralidade do Kilamba, Luanda</p>
-          <span class="property__price">A partir de 193.800.000 Kz</span>
-        </div>
-      </article>
-
-      <article class="property__card">
-        <img src="logo/casas/T3 Fase de obra.jpg" alt="Apartamento T3" />
-        <div class="property__info">
-          <span class="property__tag">Arrendamento</span>
-          <h3>Vivenda T4 Fase de obra</h3>
-          <p>Luanda, Angola</p>
-          <span class="property__price">A partir de 90.000.000 Kz</span>
-        </div>
-      </article>
-
-      <article class="property__card">
-        <img src="logo/casas/T3 Inacaba.jpg" alt="Kilamba Dream em construção" />
-        <div class="property__info">
-          <span class="property__tag property__tag--sale">Em Construção</span>
-          <h3>Kilamba Dream — T3 Fase de Obra</h3>
-          <p>Centralidade do Kilamba, Luanda</p>
-          <span class="property__price">A partir de 65.000.000 Kz</span>
-        </div>
-      </article>
-
-    </div>
-
-    <div class="portfolio__cta">
-      <a href="#contacto" class="btn btn--outline">Consultar Disponibilidade</a>
-    </div>
-
-  </section>
-
-
-  <!-- ============================================================
-       LOCALIZAÇÃO
-  ============================================================ -->
-  <section class="location">
-
-    <div class="location-text">
-      <span>Localização</span>
-      <h2>Visite-nos no Kilamba</h2>
-      <p>
-        Estamos localizados no edifício C23 em Kilamba,
-        oferecendo atendimento personalizado e soluções modernas.
-      </p>
-    </div>
-
-    <div class="map-container">
-      <iframe
-        title="Localização Muzimóveis — Kilamba C23"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7881.575666446313!2d13.251420177709962!3d-8.991661100000002!2m3!1f0!2f0!3f0!1m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f00428694c5%3A0xdfc93aa00f4bc083!2sKilamba%20Edif%C3%ADcio%20C23!5e0!3m2!1spt-PT!2sin!4v1780066505450!5m2!1spt-PT!2sin"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-
-  </section>
-
-
-  <!-- ============================================================
-       DESTAQUE — KILAMBA DREAM
-  ============================================================ -->
-  
-
-    <!-- Lado direito: vídeo + overlay de informação -->
-    <div class="highlight__right">
-
-      <div class="highlight__badge" aria-label="Super Promoção">
-        <i class="ri-fire-line" aria-hidden="true"></i>
-        <span>Super<br />Promoção</span>
-      </div>
-
-      <video
-        class="highlight__video"
-        src="logo/casas/WhatsApp Video 2026-06-07 at 9.17.27 PM.mp4"
-        poster="imageye___-_imgi_2_591164072_17842124355664103_7326059851184029769_n__1_.jpg"
-        autoplay
-        muted
-        loop
-        playsinline
-      ></video>
-
-      <div class="highlight__overlay">
-
-
-
-        <ul class="highlight__contacts">
-          <li><i class="ri-mail-line" aria-hidden="true"></i> muzimoveis@gmail.com</li>
-          <li><i class="ri-phone-line" aria-hidden="true"></i> (+244) 928 020 262 / (+351) 912 636 834</li>
-          <li><i class="ri-map-pin-line" aria-hidden="true"></i> Centralidade do Kilamba, Bloco C, Edifício 23, 2.º Andar, Apto 22</li>
-        </ul>
-
-     
-        </div>
-
-        <p class="highlight__alert">
-          <i class="ri-alarm-warning-line" aria-hidden="true"></i>
-          Apenas 10 casas disponíveis neste valor.
+      <div class="hero__content">
+        <span class="hero__eyebrow">Descubra Mais</span>
+        <h1 class="hero__title">
+          O Seu<br />
+          <em>Lar Ideal</em>
+        </h1>
+        <p class="hero__desc">
+          Na Muzimóveis transformamos imóveis em experiências únicas. Espaços
+          modernos, elegantes e preparados para oferecer conforto, segurança e
+          qualidade de vida para si e para a sua família.
         </p>
-
-      </div><!-- /.highlight__overlay -->
-
-    </div><!-- /.highlight__right -->
-
-  </section>
-
-
-  <!-- ============================================================
-       CONTACTO
-  ============================================================ -->
-  <section class="contact" id="contacto">
-
-    <div class="section__header">
-      <span class="section__label">Fale Connosco</span>
-      <h2 class="section__title">Contacto</h2>
-    </div>
-
-    <div class="contact__wrapper">
-
-      <!-- Info de contacto -->
-      <address class="contact__info">
-
-        <div class="contact__info-item">
-          <i class="ri-mail-line" aria-hidden="true"></i>
-          <div>
-            <strong>Email</strong>
-            <a href="mailto:muzimoveis@gmail.com">muzimoveis@gmail.com</a>
-          </div>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn btn--primary">Explorar Imóveis</a>
+          <a href="#contacto" class="btn btn--ghost">Falar Connosco</a>
         </div>
-
-        <div class="contact__info-item">
-          <i class="ri-whatsapp-line" aria-hidden="true"></i>
-          <div>
-            <strong>WhatsApp / Telefone</strong>
-            <a href="tel:+244928020262">(+244) 928 020 262</a>
-            <a href="tel:+351912636834">(+351) 912 636 834</a>
-          </div>
-        </div>
-
-        <div class="contact__socials" aria-label="Redes sociais">
-          <a href="https://www.facebook.com/profile.php?id=61585811738321" target="_blank" rel="noopener" aria-label="Facebook">
-            <i class="ri-facebook-fill" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/muzimoveis" target="_blank" rel="noopener" aria-label="Instagram">
-            <i class="ri-instagram-line" aria-hidden="true"></i>
-          </a>
-        </div>
-
-      </address>
-
-      <!-- Formulário -->
-      <form class="contact__form" novalidate>
-
-        <div class="form__row">
-          <div class="form__group">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="O seu nome" autocomplete="name" />
-          </div>
-          <div class="form__group">
-            <label for="contact">Email / Telefone</label>
-            <input type="text" id="contact" name="contact" placeholder="Email ou número" autocomplete="email" />
-          </div>
-        </div>
-
-        <div class="form__group">
-          <label for="subject">Assunto</label>
-          <select id="subject" name="subject">
-            <option value="">Seleccione uma opção</option>
-            <option value="compra">Compra de Imóvel</option>
-            <option value="venda">Venda de Imóvel</option>
-            <option value="arrendamento-curto">Arrendamento — Curto Prazo</option>
-            <option value="arrendamento-longo">Arrendamento — Longo Prazo</option>
-            <option value="kilamba">Kilamba Dream — T3/T4</option>
-            <option value="outro">Outro</option>
-          </select>
-        </div>
-
-        <div class="form__group">
-          <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" placeholder="Descreva a sua necessidade…"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn--primary btn--full">Enviar Pedido</button>
-
-      </form>
-
-    </div>
-
-  </section>
-
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="footer">
-
-    <div class="footer__top">
-
-      <div class="footer__brand">
-        <img src="logo/FAV-ICOM.jpeg" alt="Muzimóveis" class="footer__logo" />
-        <p>Seu lar ideal, nossa missão.</p>
       </div>
 
-      <nav class="footer__links" aria-label="Links do rodapé">
-        <a href="#">Home</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-
-      <div class="footer__social" aria-label="Redes sociais">
-        <a href="https://www.facebook.com/profile.php?id=61585811738321" target="_blank" rel="noopener" aria-label="Facebook">
+      <div class="hero__socials" aria-label="Redes sociais">
+        <a
+          href="https://www.facebook.com/profile.php?id=61585811738321"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+        >
           <i class="ri-facebook-fill" aria-hidden="true"></i>
         </a>
-        <a href="https://www.instagram.com/muzimoveis" target="_blank" rel="noopener" aria-label="Instagram">
+        <a
+          href="https://www.instagram.com/muzimoveis"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+        >
           <i class="ri-instagram-line" aria-hidden="true"></i>
         </a>
       </div>
 
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </header>
+
+    <!-- ============================================================
+       ESTATÍSTICAS
+  ============================================================ -->
+    <section class="stats" aria-label="Estatísticas">
+      <div class="stats__item">
+        <strong>+120</strong>
+        <span>Imóveis Vendidos</span>
+      </div>
+
+      <div class="stats__divider" aria-hidden="true"></div>
+
+      <div class="stats__item">
+        <strong>+8</strong>
+        <span>Anos de Experiência</span>
+      </div>
+
+      <div class="stats__divider" aria-hidden="true"></div>
+
+      <div class="stats__item">
+        <strong>+300</strong>
+        <span>Clientes Satisfeitos</span>
+      </div>
+
+      <div class="stats__divider" aria-hidden="true"></div>
+
+      <div class="stats__item">
+        <strong>100%</strong>
+        <span>Negócios Seguros</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SERVIÇOS
+  ============================================================ -->
+    <section class="services" id="servicos">
+      <div class="section__header">
+        <span class="section__label">O que fazemos</span>
+        <h2 class="section__title">Os Nossos Serviços</h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service__card">
+          <div class="service__icon">
+            <i class="ri-building-2-line" aria-hidden="true"></i>
+          </div>
+          <h3>Compra &amp; Venda</h3>
+          <p>
+            Acompanhamento completo na aquisição ou alienação do seu imóvel, com
+            transparência e segurança jurídica.
+          </p>
+        </div>
+
+        <div class="service__card">
+          <div class="service__icon">
+            <i class="ri-key-2-line" aria-hidden="true"></i>
+          </div>
+          <h3>Arrendamento</h3>
+          <p>
+            Gestão de arrendamentos residenciais e comerciais, de curto e longo
+            prazo, para particulares e empresas.
+          </p>
+        </div>
+
+        <div class="service__card">
+          <div class="service__icon">
+            <i class="ri-home-heart-line" aria-hidden="true"></i>
+          </div>
+          <h3>Avaliação Imobiliária</h3>
+          <p>
+            Análise rigorosa do valor real do seu imóvel, suportada por dados de
+            mercado actualizados.
+          </p>
+        </div>
+
+        <div class="service__card">
+          <div class="service__icon">
+            <i class="ri-shield-check-line" aria-hidden="true"></i>
+          </div>
+          <h3>Consultoria Jurídica</h3>
+          <p>
+            Apoio especializado em processos legais, contratos e documentação
+            necessária à transacção imobiliária.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       COMO FUNCIONA
+  ============================================================ -->
+    <section class="how">
+      <div class="how__left">
+        <span class="section__label">Processo</span>
+        <h2 class="section__title">Como Funciona</h2>
+        <p class="how__desc">
+          Um caminho simples e transparente, do primeiro contacto à entrega das
+          chaves.
+        </p>
+      </div>
+
+      <div class="how__steps">
+        <div class="how__step">
+          <span class="how__num" aria-hidden="true">01</span>
+          <div>
+            <h4>Briefing</h4>
+            <p>Percebemos as suas necessidades e preferências.</p>
+          </div>
+        </div>
+
+        <div class="how__step">
+          <span class="how__num" aria-hidden="true">02</span>
+          <div>
+            <h4>Selecção</h4>
+            <p>Apresentamos as melhores opções do mercado. Você decide.</p>
+          </div>
+        </div>
+
+        <div class="how__step">
+          <span class="how__num" aria-hidden="true">03</span>
+          <div>
+            <h4>Execução</h4>
+            <p>Tratamos de todo o processo. Simples. Seguro. Concluído.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PORTFÓLIO
+  ============================================================ -->
+    <section class="portfolio" id="portfolio">
+      <div class="section__header">
+        <span class="section__label">Imóveis em Destaque</span>
+        <h2 class="section__title">Portfólio</h2>
+      </div>
+
+      <div class="portfolio__grid">
+        <!-- Card 1 — Kilamba Dream V4 -->
+        <article class="property__card property__card--large">
+          <img
+            src="logo/casas/11.jpg"
+            alt="Kilamba Dream V4"
+            onclick="openLightbox(this)"
+          />
+          <span class="property__badge">Destaque</span>
+          <button class="property__fav" aria-label="Guardar">
+            <i class="ri-heart-line" aria-hidden="true"></i>
+          </button>
+          <div class="property__info">
+            <p class="property__location">
+              <i class="ri-map-pin-2-line" aria-hidden="true"></i>
+              Centralidade do Kilamba, Luanda
+            </p>
+            <span class="property__tag property__tag--sale">Venda</span>
+            <h3>Kilamba Dream — V4</h3>
+            <div class="property__stats">
+              <span><i class="ri-hotel-bed-line" aria-hidden="true"></i> 4 Quartos</span>
+              <span><i class="ri-drop-line" aria-hidden="true"></i> 3 WC</span>
+              <span><i class="ri-expand-line" aria-hidden="true"></i> 320 m²</span>
+            </div>
+            <div class="property__footer">
+              <span class="property__price">193.800.000 Kz</span>
+              <a href="#contacto" class="property__link">Ver Detalhes →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 — Vivenda T4 Fase de Obra -->
+        <article class="property__card">
+          <img
+            src="logo/casas/T3 Fase de obra.jpg"
+            alt="Vivenda T4 Fase de Obra"
+            onclick="openLightbox(this)"
+          />
+          <button class="property__fav" aria-label="Guardar">
+            <i class="ri-heart-line" aria-hidden="true"></i>
+          </button>
+          <div class="property__info">
+            <p class="property__location">
+              <i class="ri-map-pin-2-line" aria-hidden="true"></i>
+              Luanda, Angola
+            </p>
+            <span class="property__tag">Arrendamento</span>
+            <h3>Vivenda T4 Fase de Obra</h3>
+            <div class="property__stats">
+              <span><i class="ri-hotel-bed-line" aria-hidden="true"></i> 4 Quartos</span>
+              <span><i class="ri-drop-line" aria-hidden="true"></i> 2 WC</span>
+              <span><i class="ri-expand-line" aria-hidden="true"></i> 280 m²</span>
+            </div>
+            <div class="property__footer">
+              <span class="property__price">90.000.000 Kz</span>
+              <a href="#contacto" class="property__link">Ver Detalhes →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 — Kilamba Dream T3 Fase de Obra -->
+        <article class="property__card">
+          <img
+            src="logo/casas/T3 Inacaba.jpg"
+            alt="Kilamba Dream T3 Fase de Obra"
+            onclick="openLightbox(this)"
+          />
+          <span class="property__badge property__badge--construction">Em Construção</span>
+          <button class="property__fav" aria-label="Guardar">
+            <i class="ri-heart-line" aria-hidden="true"></i>
+          </button>
+          <div class="property__info">
+            <p class="property__location">
+              <i class="ri-map-pin-2-line" aria-hidden="true"></i>
+              Centralidade do Kilamba, Luanda
+            </p>
+            <span class="property__tag property__tag--sale">Em Construção</span>
+            <h3>Kilamba Dream — T3 Fase de Obra</h3>
+            <div class="property__stats">
+              <span><i class="ri-hotel-bed-line" aria-hidden="true"></i> 3 Quartos</span>
+              <span><i class="ri-drop-line" aria-hidden="true"></i> 2 WC</span>
+              <span><i class="ri-expand-line" aria-hidden="true"></i> 180 m²</span>
+            </div>
+            <div class="property__footer">
+              <span class="property__price">65.000.000 Kz</span>
+              <a href="#contacto" class="property__link">Ver Detalhes →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="portfolio__cta">
+        <a href="#contacto" class="btn btn--outline">Consultar Disponibilidade</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       LOCALIZAÇÃO
+  ============================================================ -->
+    <section class="location">
+      <div class="location-text">
+        <span>Localização</span>
+        <h2>Visite-nos no Kilamba</h2>
+        <p>
+          Estamos localizados no edifício C23 em Kilamba, oferecendo atendimento
+          personalizado e soluções modernas.
+        </p>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          title="Localização Muzimóveis — Kilamba C23"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7881.575666446313!2d13.251420177709962!3d-8.991661100000002!2m3!1f0!2f0!3f0!1m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f00428694c5%3A0xdfc93aa00f4bc083!2sKilamba%20Edif%C3%ADcio%20C23!5e0!3m2!1spt-PT!2sin!4v1780066505450!5m2!1spt-PT!2sin"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       DESTAQUE — KILAMBA DREAM
+  ============================================================ -->
+    <section class="highlight">
+      <div class="highlight__right">
+        <div class="highlight__badge" aria-label="Super Promoção">
+          <i class="ri-fire-line" aria-hidden="true"></i>
+          <span>Super<br />Promoção</span>
+        </div>
+
+        <video
+          class="highlight__video"
+          src="logo/casas/muzivideo.mp4"
+          poster="imageye___-_imgi_2_591164072_17842124355664103_7326059851184029769_n__1_.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+
+        <div class="highlight__overlay">
+          <div class="highlight__info-header">
+            <span class="highlight__brand-label">Muzimóveis — Kilamba Dream</span>
+            <p class="highlight__typology">Tipologias T3 &amp; T4</p>
+            <p class="highlight__typology-sub">Centralidade do Kilamba, Luanda</p>
+          </div>
+
+          <div class="highlight__overlay-body">
+            <ul class="highlight__contacts">
+              <li>
+                <i class="ri-mail-line" aria-hidden="true"></i>
+                muzimoveis@gmail.com
+              </li>
+              <li>
+                <i class="ri-phone-line" aria-hidden="true"></i>
+                (+244) 928 020 262 / (+351) 912 636 834
+              </li>
+              <li>
+                <i class="ri-map-pin-line" aria-hidden="true"></i>
+                Centralidade do Kilamba, Bloco C, Edifício 23, 2.º Andar, Apto 22
+              </li>
+            </ul>
+
+            <div class="highlight__price-cards">
+              <div class="highlight__price-card">
+                <span class="highlight__card-type">T3</span>
+                <span class="highlight__card-old">80.000.000 Kz</span>
+                <span class="highlight__card-new">65.000.000 Kz</span>
+                <span class="highlight__card-terms">Entrada + prestações</span>
+              </div>
+              <div class="highlight__price-card">
+                <span class="highlight__card-type">T4</span>
+                <span class="highlight__card-old">220.000.000 Kz</span>
+                <span class="highlight__card-new">193.800.000 Kz</span>
+                <span class="highlight__card-terms">Entrada + prestações</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="highlight__alert">
+            <i class="ri-alarm-warning-line" aria-hidden="true"></i>
+            Apenas 10 casas disponíveis neste valor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+    <section class="contact" id="contacto">
+      <div class="section__header">
+        <span class="section__label">Fale Connosco</span>
+        <h2 class="section__title">Contacto</h2>
+      </div>
+
+      <div class="contact__wrapper">
+        <address class="contact__info">
+          <div class="contact__info-item">
+            <i class="ri-mail-line" aria-hidden="true"></i>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:muzimoveis@gmail.com">muzimoveis@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <i class="ri-whatsapp-line" aria-hidden="true"></i>
+            <div>
+              <strong>WhatsApp / Telefone</strong>
+              <a href="tel:+244928020262">(+244) 928 020 262</a>
+              <a href="tel:+351912636834">(+351) 912 636 834</a>
+            </div>
+          </div>
+
+          <div class="contact__socials" aria-label="Redes sociais">
+            <a
+              href="https://www.facebook.com/profile.php?id=61585811738321"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <i class="ri-facebook-fill" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/muzimoveis"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <i class="ri-instagram-line" aria-hidden="true"></i>
+            </a>
+          </div>
+        </address>
+
+        <form class="contact__form" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="O seu nome"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__group">
+              <label for="contact">Email / Telefone</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="Email ou número"
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="subject">Assunto</label>
+            <select id="subject" name="subject">
+              <option value="">Seleccione uma opção</option>
+              <option value="compra">Compra de Imóvel</option>
+              <option value="venda">Venda de Imóvel</option>
+              <option value="arrendamento-curto">Arrendamento — Curto Prazo</option>
+              <option value="arrendamento-longo">Arrendamento — Longo Prazo</option>
+              <option value="kilamba">Kilamba Dream — T3/T4</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Descreva a sua necessidade…"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Enviar Pedido
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="logo/FAV-ICOM.jpeg" alt="Muzimóveis" class="footer__logo" />
+          <p>Seu lar ideal, nossa missão.</p>
+        </div>
+
+        <nav class="footer__links" aria-label="Links do rodapé">
+          <a href="#">Home</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="footer__social" aria-label="Redes sociais">
+          <a
+            href="https://www.facebook.com/profile.php?id=61585811738321"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <i class="ri-facebook-fill" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muzimoveis"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i class="ri-instagram-line" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Muzimóveis. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="credits">
+        desenvolvido com <i class="ri-heart-fill" aria-hidden="true"></i>
+        <a href="#" target="_blank" rel="noopener noreferrer">Stélvio Fumuassuca</a>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visualizar imagem"
+    >
+      <button
+        class="lightbox__close"
+        id="lightbox-close"
+        aria-label="Fechar"
+      >
+        <i class="ri-close-line" aria-hidden="true"></i>
+      </button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
     </div>
 
-    <div class="footer__bottom">
-      <p>© 2025 Muzimóveis. Todos os direitos reservados.</p>
-    </div>
-
-  </footer>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        SCRIPTS
   ============================================================ -->
-
-  <!-- Efeito 3D tilt nos cards do portfólio -->
-  <script>
-    const cards = document.querySelectorAll('.property__card');
-
-    cards.forEach(card => {
-      const img = card.querySelector('img');
-
-      card.addEventListener('mousemove', (e) => {
-        const rect     = card.getBoundingClientRect();
-        const x        = e.clientX - rect.left;
-        const y        = e.clientY - rect.top;
-        const centerX  = rect.width  / 2;
-        const centerY  = rect.height / 2;
-        const rotateX  = (y - centerY) / 18;
-        const rotateY  = (centerX - x) / 18;
-        img.style.transform = `scale(1.22) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      });
-
-      card.addEventListener('mouseleave', () => {
-        img.style.transform = 'scale(1) rotateX(0) rotateY(0)';
-      });
-    });
-  </script>
-
-  <script src="index.js"></script>
-
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
